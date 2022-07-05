@@ -25,7 +25,13 @@ export default {
     icon: 'config/icons/icon.ico'
   },
   linux: {
-    target: ['snap'],
+    target: [
+      'snap',
+      {
+        target: 'appimage',
+        arch: 'x64'
+      }
+    ],
     icon: 'config/icons'
   },
   extraMetadata: {
